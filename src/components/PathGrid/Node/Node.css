@@ -16,4 +16,8 @@
   .visited-node {
     background-color: blue;
   }
+
+  .shortest-path-node {
+    background-color: yellow;
+  }
   
