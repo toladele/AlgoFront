@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 
 const START_NODE_ROW = 10;
 const START_NODE_COL = 10;
-const FINISH_NODE_ROW = 14;
+const FINISH_NODE_ROW = 10;
 const FINISH_NODE_COL = 40;
 
 export default class PathGrid extends Component {
