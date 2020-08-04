@@ -76,13 +76,13 @@ class Controller extends React.Component {
                     
                 );
             }
-            }
-
-
         }
 
-        
+
     }
+
+        
+}
 
 
 export default Controller;

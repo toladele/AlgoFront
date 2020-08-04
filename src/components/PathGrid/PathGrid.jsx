@@ -3,13 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Node from './Node/Node'
 import './PathGrid.css';
 import dijkstra from '../pathAlgo/dijkstra';
+import bfs from '../pathAlgo/bfs';
 import Button from 'react-bootstrap/Button';
 
 
-const START_NODE_ROW = 10;
-const START_NODE_COL = 10;
-const FINISH_NODE_ROW = 10;
-const FINISH_NODE_COL = 40;
+const START_NODE_ROW = 1;
+const START_NODE_COL = 1;
+const FINISH_NODE_ROW = 9;
+const FINISH_NODE_COL = 11;
 
 export default class PathGrid extends Component {
   constructor() {
@@ -48,7 +49,7 @@ export default class PathGrid extends Component {
     const startNode = grid[START_NODE_ROW][START_NODE_COL];
     const finishNode = grid[FINISH_NODE_ROW][FINISH_NODE_COL];
     //call the dikes algorithm 
-    const visitedNodesInOrder = dijkstra(grid, startNode, finishNode);
+    const visitedNodesInOrder = bfs(grid, startNode, finishNode);
     console.log(visitedNodesInOrder);
     this.animateAlgo(visitedNodesInOrder);
   }
@@ -129,9 +130,9 @@ const createNode = (col, row) => {
 
 const getStartGrid = () => {
   const grid = [];
-  for (let row = 0; row < 20; row++) {
+  for (let row = 0; row < 14; row++) {
     const currentRow = [];
-    for (let col = 0; col < 50; col++) {
+    for (let col = 0; col < 14; col++) {
       currentRow.push(createNode(col, row));
     }
     grid.push(currentRow);

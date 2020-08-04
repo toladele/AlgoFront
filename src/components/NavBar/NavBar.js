@@ -14,18 +14,18 @@ const NavBar = () => {
                     <Nav.Link href="/">Place Start !</Nav.Link>
                     <Nav.Link href="/">Place Target !</Nav.Link>
                     <NavDropdown title="Path Finding Algorithms" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/PathGrid/PathGrid">Algo1</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Algo2</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Algo3</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Algo4</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Algo5</NavDropdown.Item>
+                        <NavDropdown.Item href="/PathGrid/PathGrid">Dijkstra</NavDropdown.Item>
+                        <NavDropdown.Item href="/">BFS</NavDropdown.Item>
+                        <NavDropdown.Item href="/">DFS</NavDropdown.Item>
+                        <NavDropdown.Item href="/">Greedy</NavDropdown.Item>
+                        <NavDropdown.Item href="/">A*</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="Sorting Algorithms" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/">Algo1</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Algo2</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Algo3</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Algo4</NavDropdown.Item>
-                        <NavDropdown.Item href="/">Algo5</NavDropdown.Item>
+                        <NavDropdown.Item href="/">Quick</NavDropdown.Item>
+                        <NavDropdown.Item href="/">Merge</NavDropdown.Item>
+                        <NavDropdown.Item href="/">Heap</NavDropdown.Item>
+                        <NavDropdown.Item href="/">Bubble</NavDropdown.Item>
+                        <NavDropdown.Item href="/">Binary</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
